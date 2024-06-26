@@ -5,14 +5,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Milton Natoli</title>
     <link rel="stylesheet" href="src/css/style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
 </head>
 <body>
     <header class="header">
         <div class="header__logo-container">
             <h2 class="header__logo">&lt;MN&gt;</h2>
         </div>
-        <button class="header__button"></button>
-        <div class="header__nav">
+        <button class="header__button" id="header__button">
+            <span class="material-symbols-outlined">
+            menu
+            </span>
+        </button>
+        <div class="header__nav" id="header__nav">
             <ul class="header__nav-list">
                 <li class="header__nav-item"><a href="#">About me</a></li>
                 <li class="header__nav-item"><a href="#">My servicies</a></li>
@@ -24,7 +29,7 @@
     <main class="profile">
         <div class="profile__wrapper">
             <div class="profile__img-container">
-                <img src="" alt="" class="profile__img">
+                <img src="src/img/profile-picture(small).jpg" alt="profile image" class="profile__img">
             </div>
             <div class="profile__data-container">
                 <div class="profile__description">
@@ -159,5 +164,6 @@
     <footer>
         <strong>Milton Natoli</strong> - Copyright
     </footer>
+    <script src="src/js/script.js"></script>
 </body>
 </html>

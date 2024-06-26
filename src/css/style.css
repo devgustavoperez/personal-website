@@ -27,11 +27,15 @@ body {
 /*---------- header section ---------- */
 .header {
     display: flex;
+    flex-direction: row;
     justify-content: space-between;
     align-items: center;
-
     background-color: var(--color2);
     padding: 5px 5px;
+}
+
+.header__logo-container {
+    margin-left: 10px;
 }
 
 .header__logo {
@@ -43,14 +47,85 @@ body {
 .header__button {
     height: 40px;
     width: 40px;
-    margin-right: 10px;
+    margin-right: 5px;
+    background-color: inherit;
+    border: none;
+}
+
+.material-symbols-outlined {
+    font-variation-settings:
+    'FILL' 0,
+    'wght' 400,
+    'GRAD' 40,
+    'opsz' 24
 }
 
 .header__nav {
     display: none;
     background-color: var(--color1);
-    
     position: absolute;
-    z-index: 20;
+    top: 58px;
+    left: 0;
+    width: 100vw;
+    height: auto;
+    background-color: var(--color0);
 }
 
+.header__nav-list {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+}
+
+.header__nav-item {
+    list-style: none;
+    border-bottom: 1px solid var(--color1);
+    padding: 15px;
+    text-align: center;
+}
+
+.header__nav-item a {
+    text-decoration: none;
+    color: var(--color2);
+}
+
+.header__nav-item:first-child {
+    border-top: 1px solid var(--color1);
+}
+
+.header__nav-item:hover {
+    background-color: var(--color2);
+}
+
+.header__nav-item:hover a {
+    color: var(--color0);
+}
+
+/*---------- header queries ---------- */
+/*---------- header ends ---------- */
+
+/*---------- profile section ---------- */
+
+.profile {
+    height: 100vh;
+}
+
+.profile__wrapper {
+    display: flex;
+    flex-direction: column;
+}
+
+.profile__img-container {
+    
+    overflow: hidden;
+}
+
+.profile__img {
+    width: 1200px;
+    max-width: 100%;
+}
+
+h1 {
+    font-family: var(--font-heading);
+    font-weight: 500;
+}
