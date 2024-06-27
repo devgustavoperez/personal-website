@@ -19,33 +19,38 @@
         </button>
         <div class="header__nav" id="header__nav">
             <ul class="header__nav-list">
-                <li class="header__nav-item"><a href="#">About me</a></li>
+                <li class="header__nav-item"><a href="#profile">About me</a></li>
                 <li class="header__nav-item"><a href="#">My servicies</a></li>
                 <li class="header__nav-item"><a href="#">My skills</a></li>
                 <li class="header__nav-item"><a href="#">Contact</a></li>
             </ul>
         </div>
     </header>
-    <main class="profile">
+    <main class="profile" id="profile">
         <div class="profile__wrapper">
             <div class="profile__img-container">
                 <img src="src/img/profile-picture(small).jpg" alt="profile image" class="profile__img">
             </div>
             <div class="profile__data-container">
                 <div class="profile__description">
-                    <h1>Hello!<br>My name is Milton</h1>
+                    <h1 class="profile__heading-mobile">Hello! My name is Milton</h1>
                     <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet ipsam provident culpa, quia eaque veniam maxime, ab beatae expedita doloribus, recusandae optio quis nisi perferendis id cumque. Libero, eaque! Velit.
+                        <strong>Lorem ipsum dolor sit amet consectetur adipisicing elit.</strong><br>Amet ipsam provident culpa, quia eaque veniam maxime, ab beatae expedita doloribus, recusandae optio quis nisi perferendis id cumque. Libero, eaque! Velit.
+                    </p>
+                    <p>
+                        <em>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur magni quia numquam dolorum?</em>
                     </p>
                 </div>
                 <div class="profile__links-container">
                     <ul class="profile__links-list">
-                        <li class="profile__links-item">facebook</li>
-                        <li class="profile__links-item">twitter</li>
-                        <li class="profile__links-item">instagram</li>
-                        <li class="profile__links-item">likedin</li>
+                        <li class="profile__links-item"><div class="icons8-facebook"></div></li>
+                        <li class="profile__links-item"><div class="icons8-twitterx"></div></li>
+                        <li class="profile__links-item"><div class="icons8-instagram"></div></li>
+                        <li class="profile__links-item"><div class="icons8-linkedin"></div></li>
                     </ul>
-                    <!--boton de Download CV-->
+                </div>
+                <div class="profile__download">
+                    <button class="profile__download-button">Download CV</button>
                 </div>
             </div>
         </div>
