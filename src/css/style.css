@@ -110,7 +110,8 @@ body {
 /*---------- profile section ---------- */
 
 .profile {
-    height: 610px; /*tamaño fijo en píxeles para que no colapsen los elementos internos al redimencionar la altura de la página*/
+    min-height: 100vh; 
+    /*height: 610px; tamaño fijo en píxeles para que no colapsen los elementos internos al redimencionar la altura de la página*/
     background-color: var(--color1);
 }
 
@@ -141,7 +142,7 @@ body {
 .profile__heading-mobile {
     font-family: var(--font-heading);
     font-weight: 500;
-    font-size: 40px;
+    font-size: 3em;
 }
 
 .profile__description p {
@@ -223,6 +224,7 @@ body {
 
 .services {
     min-height: 100vh;
+    /*height: 610px; tamaño fijo en píxeles para que no colapsen los elementos internos al redimencionar la altura de la página*/
     background-color: var(--color2);
     display: flex;
     flex-direction: column;
@@ -231,7 +233,7 @@ body {
 
 .services__title {
     font-family: var(--font-heading);
-    font-size: 40px;
+    font-size: 2.5em;
     font-weight: normal;
     flex-grow: 0;
     padding: 10px 0;
@@ -304,5 +306,73 @@ body {
 
 /*---------- skills section ---------- */
 .skills {
-    
+    /*height: 610px; tamaño fijo en píxeles para que no colapsen los elementos internos al redimencionar la altura de la página*/
+    background-color: var(--color0);
+    color: var(--color1);
+}
+
+.skills__container {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.skills__title {
+    font-family: var(--font-heading);
+    font-size: 2.5em;
+    font-weight: normal;
+    margin-top: 10px;
+}
+
+.skills__container ul {
+    height: 500px;
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.skills__skills-item {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: space-between;
+    gap: 5px;
+}
+
+.load__bar {
+    width: 70%;
+    height: 25px;
+    background-color: #545355;
+}
+
+.load__bar-bar {
+    background-color: var(--color2);
+    height: 100%;
+    font-family: var(--font-heading);
+    font-weight: normal;
+}
+
+.bar--90 {
+    width: 90%;
+}
+
+.bar--80 {
+    width: 80%;
+}
+
+.bar--60 {
+    width: 60%;
+}
+
+.bar--70 {
+    width: 70%;
+}
+
+.load__bar-percentage {
+    display: block;
+    padding: 3px 3px;
 }
