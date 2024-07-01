@@ -5,7 +5,7 @@
 
 :root {
     --color0:#2d2c2e;
-    --color1:#faf5f3;
+    --color1:#fafafa;
     --color2:#fbbd0d;
     --color3:#fd1f4a;
     --font-default:"Montserrat", sans-serif;
@@ -162,7 +162,7 @@ body {
 }
 
 .profile__description p:nth-child(2) {
-    margin-bottom: 30px;
+    margin-bottom: 25px;
 }
 
 .profile__links-list {
@@ -250,8 +250,11 @@ body {
     font-size: 2.5em;
     font-weight: normal;
     flex-grow: 0;
-    padding: 10px 0;
+    padding: 15px 0 0 0;
+}
 
+.services__title-half {
+    color: var(--color1);
 }
 
 .services__service-container {
@@ -264,6 +267,7 @@ body {
 /*  min-height: 80vh; reemplazado por flex-grow*/
     padding: 12px; /*espacio entre items y contenedor*/
     gap: 12px; /*espacio entre items*/
+    margin-bottom: 20px;
 }
 
 .services__service {
@@ -320,7 +324,7 @@ body {
 
 /*---------- skills section ---------- */
 .skills {
-    height: 640px;
+    height: auto;
     /*height: 610px; tamaño fijo en píxeles para que no colapsen los elementos internos al redimencionar la altura de la página*/
     background-color: var(--color0);
     color: var(--color1);
@@ -330,19 +334,39 @@ body {
     height: 100%;
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
     align-items: center;
+    gap: 20px;
+}
+
+.skills__metrics-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin: 0 20px 20px 20px;
 }
 
 .skills__title {
     font-family: var(--font-heading);
     font-size: 2.5em;
     font-weight: normal;
-    margin-top: 10px;
+    padding-top: 15px;
+}
+
+.skills__title-half {
+    color: var(--color2);
 }
 
 .skills__img-container {
     display: none;
+}
+
+.skills__metrics-description h3 {
+    font-size: 1em;
+    margin-bottom: 10px;
+}
+
+.skills__metrics-description p {
+    font-size: 0.9em;
 }
 
 .skills__container ul {
@@ -399,13 +423,13 @@ body {
 /*---------- contact section ---------- */
 
 .form {
-    height: 640px;
+    height: auto;
     background-color: var(--color3);
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: start;
-    gap: 20px;
+    gap: 15px;
     color: var(--color1);
 }
 
@@ -413,7 +437,7 @@ body {
     font-family: var(--font-heading);
     font-size: 2.5em;
     font-weight: normal;
-    margin-top: 30px;
+    padding-top: 15px;
 }
 
 .form__form {
@@ -421,6 +445,7 @@ body {
     display: grid;
     grid-template-columns: 1fr;
     gap: 20px;
+    margin-bottom: 30px;
 }
 
 .form__input-container {
@@ -466,7 +491,7 @@ body {
 }
 
 footer {
-    height: 250px;
+    height: 150px;
     background-color: var(--color0);
     color: var(--color1);
     display: grid;
