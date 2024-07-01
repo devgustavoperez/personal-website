@@ -21,7 +21,7 @@
 }
 
 body {
-    min-width: 400px;
+    min-width: 360px;
     background-color: var(--color1);
     font-family: var(--font-default);
     font-size: 1em;
@@ -104,13 +104,10 @@ body {
     color: var(--color0);
 }
 
-/*---------- header queries ---------- */
-/*---------- header ends ---------- */
-
 /*---------- profile section ---------- */
 
 .profile {
-    min-height: 100vh; 
+    height: 640px;
     /*height: 610px; tamaño fijo en píxeles para que no colapsen los elementos internos al redimencionar la altura de la página*/
     background-color: var(--color1);
 }
@@ -131,18 +128,27 @@ body {
     max-width: 100%;
 }
 
+.profile__desktop-title-container {
+    display: none;
+}
+
 .profile__data-container {
     flex-grow: 1;
+}
+
+.profile__data {
+    height: 100%;
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
+    gap: 15px;
     margin: 0 15px 15px 15px;
 }
 
-.profile__heading-mobile {
+.profile__mobile-title {
     font-family: var(--font-heading);
     font-weight: 500;
-    font-size: 3em;
+    font-size: 2.5em;
+    margin-top: 5px;
 }
 
 .profile__description p {
@@ -151,8 +157,16 @@ body {
     text-wrap: pretty;
 }
 
+.profile__description p:first-child {
+    margin-top: 0;
+}
+
+.profile__description p:nth-child(2) {
+    margin-bottom: 30px;
+}
+
 .profile__links-list {
-    margin: 15px 0 10px 0;
+    margin: 15px 0 0 0;
     display: flex;
     justify-content: center;
     gap: 20px;
@@ -205,7 +219,7 @@ body {
     margin-left: 1px;
 }
 
-.profile__download {
+.profile__download-container {
     margin: 10px 0 0 0;
     display: flex;
     justify-content: center;
@@ -223,7 +237,7 @@ body {
 /*---------- services section ---------- */
 
 .services {
-    min-height: 100vh;
+    height: 640px;
     /*height: 610px; tamaño fijo en píxeles para que no colapsen los elementos internos al redimencionar la altura de la página*/
     background-color: var(--color2);
     display: flex;
@@ -306,13 +320,14 @@ body {
 
 /*---------- skills section ---------- */
 .skills {
+    height: 640px;
     /*height: 610px; tamaño fijo en píxeles para que no colapsen los elementos internos al redimencionar la altura de la página*/
     background-color: var(--color0);
     color: var(--color1);
 }
 
 .skills__container {
-    min-height: 100vh;
+    height: 100%;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -324,6 +339,10 @@ body {
     font-size: 2.5em;
     font-weight: normal;
     margin-top: 10px;
+}
+
+.skills__img-container {
+    display: none;
 }
 
 .skills__container ul {
@@ -380,7 +399,7 @@ body {
 /*---------- contact section ---------- */
 
 .form {
-    height: 500px;
+    height: 640px;
     background-color: var(--color3);
     display: flex;
     flex-direction: column;
@@ -447,7 +466,7 @@ body {
 }
 
 footer {
-    height: 30vh;
+    height: 250px;
     background-color: var(--color0);
     color: var(--color1);
     display: grid;
