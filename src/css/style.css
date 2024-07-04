@@ -281,7 +281,7 @@ body {
     display: grid;
     place-content: center;
     color: var(--color1);
-    border-radius: 5px;
+    border-radius: 10px;
 }
 
 .services__service:hover {
@@ -349,7 +349,7 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    margin: 0 20px 20px 20px;
+    margin: 0 40px 20px 40px;
 }
 
 .skills__title {
@@ -374,11 +374,12 @@ body {
 
 .skills__metrics-description p {
     font-size: 0.9em;
+    text-wrap: pretty;
 }
 
 .skills__container ul {
     height: 500px;
-    width: 90%;
+    width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
@@ -388,13 +389,13 @@ body {
     list-style: none;
     display: flex;
     flex-direction: column;
-    width: 100%;
+    width: 90%;
     justify-content: space-between;
     gap: 5px;
 }
 
 .load__bar {
-    width: 70%;
+    width: 100%;
     height: 25px;
     background-color: #545355;
 }
