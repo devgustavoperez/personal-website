@@ -247,6 +247,10 @@ body {
     height: 640px;
     /*height: 610px; tamaño fijo en píxeles para que no colapsen los elementos internos al redimencionar la altura de la página*/
     background-color: var(--color2);
+}
+
+.services__wrapper {
+    height: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;

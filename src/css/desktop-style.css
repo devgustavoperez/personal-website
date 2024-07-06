@@ -157,7 +157,6 @@
     justify-content:center;
     gap: 20px;
     margin-top: 10px;
-    margin-bottom: 10px;
 }
 
 /*
@@ -172,6 +171,7 @@
 
 .profile__links-list {
     justify-content: start;
+    margin: 0;
 }
 
 .profile__download-container {
@@ -192,3 +192,39 @@
     height: 35px;
     margin-bottom: 15px;
 }
+
+/* ---------- services section ---------- */
+
+.services {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.services__wrapper {
+    flex-direction: row-reverse;
+    justify-content: center;
+    align-items: stretch;
+    gap: 20px;
+    width: 50%;
+    margin: 0;
+}
+
+.services__title-container {
+    margin-bottom: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+}
+
+.services__title {
+    text-align: right;
+    line-height: 1em;
+}
+
+.services__service-container {
+    margin: 20px;
+}
+
+
