@@ -76,6 +76,10 @@
     align-items: center;
 }
 
+.profile__description p {
+    width: 600px;
+}
+
 /* ---------- services section ---------- */
 
 .services__service-container {
