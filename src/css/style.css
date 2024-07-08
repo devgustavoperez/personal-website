@@ -285,7 +285,8 @@ body {
 
 .services__service {
     display: grid;
-    place-content: center;
+    justify-items: center;
+    align-items: center;
     color: var(--color1);
     border-radius: 10px;
 }
@@ -297,6 +298,7 @@ body {
 .services__service-name {
     font-family: var(--font-default);
     font-weight: normal;
+    text-align: center;
 }
 
 .service--background-web-dev {

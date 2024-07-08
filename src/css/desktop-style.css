@@ -120,10 +120,10 @@
 
 .profile__data {
     margin: 0;
-    min-height: 70vh;
+    min-height: 60vh;
     width: 70%;
     flex-direction: row;
-    justify-content: end;
+    justify-content: space-between;
     
 }
 
@@ -171,7 +171,7 @@
 
 .profile__links-list {
     justify-content: start;
-    margin: 0;
+    margin: 0 0 20px 0;
 }
 
 .profile__download-container {
@@ -206,13 +206,13 @@
     flex-direction: row-reverse;
     justify-content: center;
     align-items: stretch;
-    gap: 20px;
-    width: 50%;
+    max-width: 800px;
     margin: 0;
+    padding: 20px 0;
 }
 
 .services__title-container {
-    margin-bottom: 100px;
+    margin-bottom: 80px;
     display: flex;
     flex-direction: column;
     justify-content: end;
@@ -224,7 +224,21 @@
 }
 
 .services__service-container {
-    margin: 20px;
+    margin: 0;
+}
+
+.services__service-container {
+    grid-template-columns: repeat(auto-fill, minmax(170px, 1fr));
+    grid-template-rows: repeat(3, 1fr);
+}
+
+.services__service:first-child {
+    grid-column: span 2;
+    grid-row: span 2;
+}
+
+.services__service:last-child {
+    grid-column: 1 / -1;
 }
 
 
