@@ -121,10 +121,9 @@
 .profile__data {
     margin: 0;
     min-height: 60vh;
-    width: 70%;
+    width: 980px;
     flex-direction: row;
     justify-content: space-between;
-    
 }
 
 .profile__mobile-title-container {
@@ -132,7 +131,7 @@
 }
 
 .profile__desktop-title-container {
-    width: 15%;
+    width: 20%;
     display: flex;
     flex-direction: column;
     justify-content: end;
@@ -200,13 +199,15 @@
     display: flex;
     justify-content: center;
     align-items: center;
+
+    background-color: gray;
 }
 
 .services__wrapper {
     flex-direction: row-reverse;
     justify-content: center;
     align-items: stretch;
-    max-width: 800px;
+    max-width: 950px;
     margin: 0;
     padding: 20px 0;
 }
@@ -219,6 +220,7 @@
 }
 
 .services__title {
+    font-size: 2.5em;
     text-align: right;
     line-height: 1em;
 }
@@ -241,4 +243,46 @@
     grid-column: 1 / -1;
 }
 
+/* ---------- skills section ---------- */
+.skills {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+}
 
+.skills__container {
+    min-height: 100vh;
+    flex-direction: row;
+    justify-content: end;
+    align-items: stretch;
+    max-width: 80%;
+}
+
+.skills__title {
+    width: 80px;
+    line-height: 1em;
+    align-self: flex-end;
+    margin-bottom: 100px;
+}
+
+.skills__content-wrapper {
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.skills__img-container {
+    display: block;
+}
+
+.skills__img {
+    width: 350px;
+    height: 100%;
+    object-fit: cover;
+    object-position: right;
+}
+
+.skills__metrics-container {
+    margin: 20px 40px 0px 20px;
+}
