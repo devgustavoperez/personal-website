@@ -38,6 +38,10 @@
     width: 85px;
 }
 
+.header__nav-item:first-child:hover {
+    border-top: none;
+}
+
 .header__nav-item:nth-child(2) {
     width: 110px;
 }
@@ -199,21 +203,18 @@
     display: flex;
     justify-content: center;
     align-items: center;
-
-    background-color: gray;
 }
 
 .services__wrapper {
     flex-direction: row-reverse;
     justify-content: center;
     align-items: stretch;
-    max-width: 950px;
-    margin: 0;
-    padding: 20px 0;
+    width: 970px;
 }
 
 .services__title-container {
-    margin-bottom: 80px;
+    width: 130px;
+    margin-bottom: 100px;
     display: flex;
     flex-direction: column;
     justify-content: end;
@@ -226,7 +227,10 @@
 }
 
 .services__service-container {
-    margin: 0;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 800px;
+    padding-left: 0;
 }
 
 .services__service-container {
@@ -253,9 +257,9 @@
 .skills__container {
     min-height: 100vh;
     flex-direction: row;
-    justify-content: end;
+    justify-content: space-between;
     align-items: stretch;
-    max-width: 80%;
+    width: 980px;
 }
 
 .skills__title {
@@ -284,5 +288,96 @@
 }
 
 .skills__metrics-container {
-    margin: 20px 40px 0px 20px;
+    margin: 20px 0px 0px 20px;
+    justify-content: center;
+}
+
+.skills__metrics-description p {
+    max-width: 450px;
+}
+
+/*---------- contact section ---------- */
+
+.form {
+    min-height: 80vh;
+    background-color: var(--color1);
+    background-image: linear-gradient(to bottom,rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.5)) ,url('../img/contact.jpg');
+    background-size: cover;
+    background-position: center center;
+}
+
+.form__title {
+    margin-top: 30px;
+    color: var(--color3);
+}
+
+.form__form {
+    width: 40%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas:
+    "name lastname"
+    "email email"
+    "message message"
+    "button button";
+    gap: 20px;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: var(--color3);
+}
+
+.form__input-container {
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+}
+
+.input-container--name {
+    grid-area: name;
+}
+
+.input-container--lastname {
+    grid-area: lastname;
+}
+
+.input-container--email {
+    grid-area: email;
+}
+
+.input-container--message {
+    grid-area: message;
+}
+
+.input-container--button {
+    grid-area: button;
+}
+
+.form__input-container input {
+    border: none;
+    height: 30px;
+    padding-left: 10px;
+    font-family: inherit;
+    border-radius: 5px;
+}
+
+.form__input-container input:focus-visible {
+    outline: none;
+}
+
+.form__input-container textarea {
+    height: 84px;
+    border: none;
+    resize: none;
+    font-family: inherit;
+    padding: 5px 8px;
+    border-radius: 5px;
+}
+
+.form__input-container textarea:focus-visible {
+    outline: none;
+}
+
+.form__input-button {
+    background-color: var(--color2);
+    font-weight: bold;
 }

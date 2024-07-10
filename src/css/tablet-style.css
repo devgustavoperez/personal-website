@@ -34,6 +34,10 @@
     width: 85px;
 }
 
+.header__nav-item:first-child:hover {
+    border-top: none;
+}
+
 .header__nav-item:nth-child(2) {
     width: 110px;
 }

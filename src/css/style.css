@@ -26,6 +26,8 @@ body {
     font-family: var(--font-default);
     font-size: 1em;
     color: var(--color0);
+
+    overflow-x: hidden;
 }
 
 /*---------- header section ---------- */
@@ -82,7 +84,7 @@ body {
 }
 
 .header__nav-item {
-    border-bottom: 1px solid var(--color1);
+    border-bottom: 1px solid var(--color2);
     padding: 15px;
     text-align: center;
 }
@@ -92,13 +94,18 @@ body {
     color: var(--color2);
 }
 
-.header__nav-item:first-child {
-    border-top: 1px solid var(--color1);
+.header__nav-item:first-child:hover {
+    border-top: 1px solid var(--color0);
+}
+
+.header__nav-item:last-child {
+    border-bottom: none;
 }
 
 .header__nav-item:hover {
     background-color: var(--color2);
 }
+
 
 .header__nav-item:hover a {
     color: var(--color0);
@@ -185,6 +192,11 @@ body {
     border-radius: 50%;
 }
 
+.profile__links-item:hover {
+    background-color: var(--color3);
+    color: var(--color1);
+}
+
 .icons8-facebook { 
     display: inline-block;
     width: 25px;
@@ -239,6 +251,11 @@ body {
     border-radius: 50px;
     font-family: var(--font-default);
     font-size: 0.9em;
+}
+
+.profile__download-button:hover {
+    background-color: var(--color3);
+    color: var(--color1);
 }
 
 /*---------- services section ---------- */
@@ -507,13 +524,14 @@ body {
 }
 
 footer {
-    height: 150px;
+    height: 80px;
     background-color: var(--color0);
     color: var(--color1);
     display: grid;
     grid-template-columns: 1fr;
-    justify-items: center;
+    justify-items: start;
     align-items: center;
+    padding-left: 30px;
 }
 
 /*end*/
