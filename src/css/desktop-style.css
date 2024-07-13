@@ -207,6 +207,13 @@
     margin-bottom: 15px;
 }
 
+/*---------- upward button ----------*/
+
+.upward__button {
+    display: block;
+}
+
+
 /* ---------- services section ---------- */
 
 .services {
@@ -394,12 +401,3 @@
 }
 
 /*---------- animation ----------*/
-
-@keyframes aparecer {
-    from {
-        opacity: 0;
-    }
-    to {
-        opacity: 1;
-    }
-}

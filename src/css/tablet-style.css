@@ -68,8 +68,6 @@
 
 /* ---------- profile section ---------- */
 
-
-
 .profile__mobile-title-container {
     display: flex;
     flex-direction: column;
@@ -90,6 +88,36 @@
 .profile__description p {
     width: 600px;
 }
+
+/*---------- upward button -----------*/
+
+.upward__button {
+    display: block;
+    position: fixed;
+    top: 85vh;
+    left: 97%;
+    
+    /*
+    transition-property: left;
+    transition-duration: 2s;
+    transition-timing-function: ease; */
+}
+
+.upward__button:hover {
+    left: 93% !important;
+}
+
+.upward__button div { 
+    border-radius: 10px 0 0 10px;
+    animation: none;
+
+    display: flex;
+    justify-content: start;
+}
+
+.upward__button:hover div { 
+    justify-content: center;
+} 
 
 /* ---------- services section ---------- */
 
@@ -146,4 +174,15 @@
 .skills__metrics-container ul {
     padding-left: 20px;
     padding-bottom: 15px;
+}
+
+/*---------- animations ---------- */
+
+@keyframes showup {
+    from {
+        left: 110%;
+    }
+    to {
+        left: 97%;
+    }
 }
