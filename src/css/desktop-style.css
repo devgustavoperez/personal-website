@@ -127,6 +127,10 @@
     display: flex;
     justify-content: center;
     align-items: center;
+
+    animation: aparecer;
+    animation-timeline: view();
+    animation-range-end: cover 50%;
 }
 
 .profile__data {
@@ -387,4 +391,15 @@
 .form__input-button {
     background-color: var(--color2);
     font-weight: bold;
+}
+
+/*---------- animation ----------*/
+
+@keyframes aparecer {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
 }
