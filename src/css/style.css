@@ -59,13 +59,13 @@ body {
     color: var(--color0);
 }
 
-.material-symbols-outlined { 
+#icono-menu { 
     font-variation-settings:
     'FILL' 0,
     'wght' 400,
     'GRAD' 40,
     'opsz' 24;
-    color: var(--color0) !important;
+    color: var(--color0);
 }
 
 .header__nav {
