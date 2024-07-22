@@ -1,15 +1,7 @@
-let button = document.querySelector("#header__button");
-let nav = document.querySelector("#header__nav");
-let menu = false;
+const openMobileMenu = document.querySelector("#header__button");
+const mobileMenu = document.querySelector("#header__nav");
 
-button.addEventListener("click", iniciar);
-
-function iniciar() {
-    if (menu == false) {
-        nav.style.display = 'block';
-        menu = true;
-    } else {
-        nav.style.display = 'none';
-        menu = false;
-    }
-}
+openMobileMenu.addEventListener("click", (e) => {
+    e.preventDefault();
+    mobileMenu.classList.toggle("show");
+});

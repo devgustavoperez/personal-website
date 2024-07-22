@@ -56,14 +56,16 @@ body {
     margin-right: 5px;
     background-color: inherit;
     border: none;
+    color: var(--color0);
 }
 
-.material-symbols-outlined {
+.material-symbols-outlined { 
     font-variation-settings:
     'FILL' 0,
     'wght' 400,
     'GRAD' 40,
-    'opsz' 24
+    'opsz' 24;
+    color: var(--color0) !important;
 }
 
 .header__nav {
@@ -76,11 +78,16 @@ body {
     background-color: var(--color0);
 }
 
+.show {
+    display: flex; 
+}
+
 .header__nav-list {
     display: flex;
     flex-direction: column;
     align-items: stretch;
     list-style: none;
+    width: 100%;
 }
 
 .header__nav-list a {
